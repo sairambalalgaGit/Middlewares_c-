@@ -1,0 +1,87 @@
+﻿@page
+@model Core_Web_Razor.Pages.wiproModel
+@{
+}
+
+@*
+<h1>Welcome to wipro</h1>
+<h1>ajay</h1>
+
+<h2>Today date is: @DateTime.Now.ToShortDateString()</h2>
+
+<hr />
+
+<h1>Multiline expressions</h1>
+
+@{
+	var date = DateTime.Now.ToShortDateString();
+	var message = "Ajay u r lucky";
+}
+
+<h1>Today date is : @date</h1>
+<h2>Convey this : @message</h2>
+
+<hr />
+@{
+	var date1 = DateTime.Now.ToShortDateString();
+	string message1 = "Balaga u r not so much lucky";
+
+	@:Today date is: @date1;
+	<br />
+	@message1;
+
+}
+<hr />
+<hr />
+@{
+	var date2 = DateTime.Now.ToShortDateString();
+	string message2 = "Balaga u r not so much lucky";
+
+	<Text>Today date is: </Text> @date2
+	;
+	<br />
+	@message2
+	;
+
+}
+<hr />
+
+
+
+@{
+	for(int i = 0; i <= 5; i++)
+	{
+		<h1>value of i is : @i</h1>
+	}
+
+	var j = 5;
+	while(j  < 10)
+	{
+		<p>value of j is : @j</p>	
+		<p>wipro</p>
+		j++;
+	}
+}
+
+
+
+@{
+	string[] names = { "ajay", "renu", "siva" };
+
+	<h1>order of names: </h1>
+
+	<ol>
+
+		@foreach(var name in names)
+		{
+			<li>@name</li>
+		}
+	</ol>
+}
+*@
+
+	<p class="wipro">
+		i love india
+	</p>
+
+	<button onclick="showAlert()">click on</button>
